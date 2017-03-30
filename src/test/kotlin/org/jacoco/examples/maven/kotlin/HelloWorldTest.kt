@@ -1,12 +1,16 @@
 package org.jacoco.examples.maven.kotlin
 
 import junit.framework.TestCase
-import kotlin.test.assertEquals
 
 class HelloWorldTest : TestCase() {
 
-	fun testAssert() : Unit {
+	fun testAssert() {
 		assertEquals("Hello World!", HelloWorld().getMessage(false))
 	}
+
+	fun testAssert2() {
+		assertEquals("Hello Universe!", HelloWorld().getMessage(true))
+	}
+
 
 }
